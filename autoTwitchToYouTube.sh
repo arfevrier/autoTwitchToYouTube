@@ -2,7 +2,7 @@
 cd /tmp
 while true
 do
-	streamer_name="???????"
+	streamer_name=$ATY_TWITCH_USER
 	timestamp=$(date +%s)
 	timedate=$(date)
 	streamlink twitch.tv/$streamer_name best --twitch-disable-hosting -o ${streamer_name}_$timestamp.mp4 > /dev/null
