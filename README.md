@@ -11,7 +11,7 @@ pm2 startup
 ## Install dependencies
 ```
 apt-get install python3-pip unzip
-pip3 install --user --upgrade streamlink
+pip3 install --upgrade streamlink
 pip3 install --upgrade google-api-python-client oauth2client progressbar2
 ```
 ```
