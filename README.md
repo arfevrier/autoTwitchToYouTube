@@ -1,4 +1,5 @@
 # autoTwitchToYouTube
+Use to automatically download Twitch livestream and upload it to YouTube.
 
 ## Install PM2
 ```
@@ -10,8 +11,8 @@ pm2 startup
 ## Install dependencies
 ```
 apt-get install python3-pip
-pip install --upgrade youtube_dl
-pip install --user --upgrade streamlink
+pip3 install --upgrade youtube_dl
+pip3 install --user --upgrade streamlink
 ```
 
 ## Install autoTwitchToYouTube
