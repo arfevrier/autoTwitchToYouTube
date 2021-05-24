@@ -28,7 +28,7 @@ cd autoTwitchToYouTube
 Download your client secret to "./client_secrets.json" from:
 https://console.cloud.google.com/apis/dashboard
 
-Finish setup of youtube-upload:
+Finish setup of YouTubeUploader:
 ```
 youtubeuploader -headlessAuth -filename tmp.mp4
 ```
