@@ -10,20 +10,13 @@ pm2 startup
 
 ## Install dependencies
 ```
-apt-get install python3-pip unzip
+apt-get install python3-pip tar
 pip3 install --upgrade streamlink
-pip3 install --upgrade google-api-python-client oauth2client progressbar2
 ```
+Download last release of https://github.com/porjo/youtubeuploader
 ```
-wget https://github.com/tokland/youtube-upload/archive/master.zip
-unzip master.zip && cd youtube-upload-master && python3 setup.py install
-```
-Download your client secret to "~/.client_secrets.json" from:
-https://console.cloud.google.com/apis/dashboard
-
-Finish setup of youtube-upload:
-```
-youtube-upload tmp.mp4
+tar -xvf youtubeuploader_linux_amd64.tar.gz
+mv youtubeuploader_linux_amd64 /usr/local/bin/youtubeuploader
 ```
 
 ## Install autoTwitchToYouTube
@@ -31,10 +24,18 @@ youtube-upload tmp.mp4
 git clone "https://github.com/arnicel/autoTwitchToYouTube.git"
 cd autoTwitchToYouTube
 ```
+## Finish setup of YouTubeUploader
+Download your client secret to "./client_secrets.json" from:
+https://console.cloud.google.com/apis/dashboard
+
+Finish setup of youtube-upload:
+```
+youtubeuploader -headlessAuth -filename tmp.mp4
+```
 
 ## Define the Twitch User
 ```
-export ATY_TWITCH_USER=????
+export ATY_TWITCH_USER=<username>
 ```
 
 ## Start autoTwitchToYouTube
