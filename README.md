@@ -30,7 +30,7 @@ https://console.cloud.google.com/apis/dashboard
 
 Finish setup of YouTubeUploader:
 ```
-youtubeuploader -headlessAuth -filename <not important, for exemple /proc/cpuinfo>
+youtubeuploader -headlessAuth -filename <not important, for example /proc/cpuinfo>
 ```
 
 ## Define the Twitch User
