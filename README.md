@@ -40,6 +40,6 @@ export ATY_TWITCH_USER=<username>
 
 ## Start autoTwitchToYouTube
 ```
-pm2 start autoTwitchToYouTube.sh
+pm2 start autoTwitchToYouTube.sh --name $ATY_TWITCH_USER
 pm2 save
 ```
