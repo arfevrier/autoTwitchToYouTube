@@ -14,7 +14,7 @@ do
 
 	# Start streamlink and youtubeuploader app
 	# - Reupload limit of 10h, because of the 12h upload limit by YouTube
-	streamlink_option = 'best --hls-duration 10:00:00 --twitch-disable-hosting -O'
+	streamlink_option='best --hls-duration 10:00:00 --twitch-disable-hosting -O'
 	streamlink twitch.tv/$streamer_name $streamlink_option 2>/dev/null | youtubeuploader -metaJSON /tmp/input.$streamer_name -filename - >/dev/null 2>&1
 
 	sleep 1m
