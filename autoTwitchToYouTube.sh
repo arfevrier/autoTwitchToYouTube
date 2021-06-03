@@ -4,7 +4,6 @@
 # Everything through pipe, no video file created
 while true
 do
-
 	# Define some variables
 	streamer_name=$ATY_TWITCH_USER
 	timedate=$(date)
