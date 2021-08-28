@@ -5,8 +5,8 @@
 while true
 do
         # Define some variables
-        streamer_name=$ATY_TWITCH_USER
-        youtube_stream_key='****-****-****-****-****'
+        streamer_name=$ATY_TWITCH_USERNAME
+        youtube_stream_key=$ATY_YOUTUBE_STREAMKEY
         
         # To remember
         # - re: 
