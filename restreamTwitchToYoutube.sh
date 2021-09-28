@@ -9,7 +9,7 @@ do
         youtube_stream_key=$ATY_YOUTUBE_STREAMKEY
         
         # To remember
-        # - re: 
+        # - re: (Optional) Read input at the native frame rate
         # - i: input file, sdtin
         # - ar: audio rate: must be 44100 for youtube live
         # - acodec: audio codec: must not be "copy" to force audio rate. Use of "aac", same Twitch audio Codec
